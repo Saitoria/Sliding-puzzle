@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://McLaren-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Puzzle.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 3
+outline_color = Color( 0.0196078, 0.00392157, 0.00392157, 1 )
+use_filter = true
+font_data = ExtResource( 3 )
+
+[node name="Puzzle" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 262.0
+margin_top = 50.0
+margin_right = 724.0
+margin_bottom = 150.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.843137, 0.8, 0.133333, 1 )
+text = "CRAZY PUZZLE"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
